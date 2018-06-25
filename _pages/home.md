@@ -3,7 +3,7 @@ title: "Failles et Siesmes"
 layout: homelay
 excerpt: "Failles et Siesmes @ ENS"
 sitemap: false
-permalink: ./
+permalink: /index.html
 ---
 
 <figure class="fourth">
