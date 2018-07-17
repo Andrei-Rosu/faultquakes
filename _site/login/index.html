@@ -5,11 +5,11 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Page Not Found</title>
-  <meta name="description" content="Page not found. Your pixels are in another canvas.">
+  <title>Failles et Siesmes</title>
+  <meta name="description" content="Failles et Siesmes @ ENS">
   <link rel="stylesheet" href="http://localhost:4000/css/main.css">
   <link rel="stylesheet" href="http://localhost:4000/css/login.css">
-  <link rel="canonical" href="http://localhost:4000/404.html">
+  <link rel="canonical" href="http://localhost:4000/login/">
 <link rel="shortcut icon" type ="image/x-icon" href="http://localhost:4000/images/favicon.ico">
 
 
@@ -47,7 +47,29 @@
 
     <div class="container-fluid">
       <div class="row">
-        <p>Sorry, but the page you were trying to view does not exist.</p>
+        <a href="login.php"><button class="loginbutton" type="submit">Se connecter</button></a>
+<div id="section">
+    <h1>Inscription</h1>
+    <form method="post" action="index.php">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+        <input type="text" name="name" placeholder="nom"/>
+            </div>
+            <div class="form-group col-md-6">
+        <input type="text" name="username" placeholder="pseudo"/>
+            </div>
+            <div class="form-group col-md-6">
+        <input type="email" name="email" placeholder="email"/>
+            </div>
+            <div class="form-group col-md-6">
+        <input type="password" name="password" placeholder="mot de passe" />
+            </div>
+        </div>
+        <button type="submit" name="submit">S'inscrire</button><br>
+        <span class="text"><?php if(isset($message)) {echo $message;}?></span>
+        <span class="text"><?php if(isset($error)){ echo $error ;}?></span>
+    </form>
+</div>
 
 
       </div>
